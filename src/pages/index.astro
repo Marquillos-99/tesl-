@@ -2,13 +2,20 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/LandingHeader.astro";
 import LandingSection from "../components/LandingSection.astro";
+import ChargeSection from "../components/ChargeSection.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <Header />
-  <main class="relative w-full h-screen overflow-auto">
-    <LandingSection />
-    <LandingSection />
-    <LandingSection />
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-x-hidden overflow-auto scroll-m-0"
+  >
+    <div class="snap-center">
+      <LandingSection />
+    </div>
+
+    <div class="snap-center">
+      <ChargeSection />
+    </div>
   </main>
 </Layout>
