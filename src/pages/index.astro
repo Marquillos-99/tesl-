@@ -83,6 +83,29 @@ import Card from "../components/Card.astro";
     <section
       class="bg-black h-screen w-screen text-center relative overflow-hidden"
     >
+      <div class="z-30 relative h-full flex flex-col">
+        <header>
+          <h2 class="text-white pt-24 text-[40px] font-semibold">
+            Vive la experiencia Tesla
+          </h2>
+          <p class="text-white text-sm">
+            Agenda una demostración de manejo hoy
+          </p>
+        </header>
+
+        <footer class="flex flex-grow flex-nowrap justify-end flex-col pb-24">
+          <a class="text-white" href=""> Demostracion de manejo</a>
+        </footer>
+      </div>
+
+      <div class="absolute top-0 bottom-0 h-full z-10">
+        <video
+          class="object-center object-cover h-full"
+          autoplay
+          muted
+          loop
+          src="/Video.webm"></video>
+      </div>
     </section>
   </main>
 </Layout>
