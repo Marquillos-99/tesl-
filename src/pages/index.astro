@@ -93,14 +93,23 @@ import Card from "../components/Card.astro";
           </p>
         </header>
 
-        <footer class="flex flex-grow flex-nowrap justify-end flex-col pb-24">
-          <a class="text-white" href=""> Demostracion de manejo</a>
+        <footer
+          class="flex flex-grow flex-nowrap justify-end flex-col pb-[90px] text-sm"
+        >
+          <div>
+            <a
+              class="border-[3px] text-sm rounded font-medium px-12 py-[10px] text-white"
+              href=""
+            >
+              Demostracion de manejo</a
+            >
+          </div>
         </footer>
       </div>
 
-      <div class="absolute top-0 bottom-0 h-full z-10">
+      <div class="absolute top-0 bottom-0 h-full w-full z-10">
         <video
-          class="object-center object-cover h-full"
+          class="object-center object-cover"
           autoplay
           muted
           loop
